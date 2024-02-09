@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+
+    <div id="quiz-container" class="bg-white p-8 rounded shadow-md text-center">
+        <div id="questionNumber" class="mb-4">
+            <h1 class="text-2xl font-semibold">Question 1</h1>
+        </div>
+
+        <div id="question" class="mb-4">
+            <input type="text" id="newQuestion" class="block w-full mt-2 p-2 border border-gray-300 rounded">
+        </div>
+
+        <div id="options" class="mb-4">
+            <div class="flex flex-wrap -mx-2">
+                <div class="w-full md:w-1/2 px-2 mb-2">
+                    <label for="newOption1" class="text-lg font-medium">Option 1:</label>
+                    <input type="text" id="newOption1" class="block w-full mt-2 p-2 border border-gray-300 rounded">
+                </div>
+                <div class="w-full md:w-1/2 px-2 mb-2">
+                    <label for="newOption2" class="text-lg font-medium">Option 2:</label>
+                    <input type="text" id="newOption2" class="block w-full mt-2 p-2 border border-gray-300 rounded">
+                </div>
+                <div class="w-full md:w-1/2 px-2 mb-2">
+                    <label for="newOption3" class="text-lg font-medium">Option 3:</label>
+                    <input type="text" id="newOption3" class="block w-full mt-2 p-2 border border-gray-300 rounded">
+                </div>
+                <div class="w-full md:w-1/2 px-2 mb-2">
+                    <label for="newOption4" class="text-lg font-medium">Option 4:</label>
+                    <input type="text" id="newOption4" class="block w-full mt-2 p-2 border border-gray-300 rounded">
+                </div>
+            </div>
+        </div>
+
+        <div id="buttons" class="flex justify-center">
+            <button onclick="addQuestion()" class="bg-blue-500 text-white px-4 py-2 rounded mr-2">Add More Questions</button>
+            <button onclick="saveAndExit()" class="bg-green-500 text-white px-4 py-2 rounded">Save and Exit</button>
+        </div>
+    </div>
+
+    <script></script>
+</body>
+</html>
